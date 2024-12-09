@@ -1,0 +1,57 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure both take full height */
+}
+
+body {
+  background-color: rgb(248, 242, 242);
+  height: calc(100vh - 500px); /* Full height minus the padding */
+  padding-bottom: 500px; /* Necessary padding for layout */
+}
+
+
+/* Grid container for the text */
+.text-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 4 equal columns */
+  column-gap: 20px; /* Space between columns */
+  row-gap: 20px; /* Space between rows */
+  padding: 0; /* Remove any padding inside the grid container */
+  margin: 0; /* Remove any margin around the grid container */
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+}
+
+/* Styling for the paragraph elements */
+.text-grid p {
+  font-size:70px;
+  padding: 10px;
+  background-color: #da0e0e; /* Optional: background for better visibility */
+  text-align: left; /* Align text to the left */
+  border-radius: 5px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+
+.text{
+  color: black;
+}
+
+.boxes{
+  width: 300px;
+  background-color: darkgray;
+}
+
+.movie-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 4 equal columns */
+  column-gap: 20px; /* Space between columns */
+  row-gap: 20px; /* Space between rows */
+  padding: 0; /* Remove any padding inside the grid container */
+  margin: 0; /* Remove any margin around the grid container */
+  box-sizing: border-box; 
+  height : 100vh;
+  width : 100%;
+}

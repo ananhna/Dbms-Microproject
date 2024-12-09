@@ -1,0 +1,157 @@
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  position : relative;
+}
+
+.profile-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.change-password {
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+  color: #333;
+  margin-left:-130px;
+  cursor:pointer;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.profile-create{
+  position:absolute;
+  cursor:pointer;
+  right:20px;
+  top:40px;
+  font-size: 50px;
+  font-weight: 900;
+  color : hsla(0, 0%, 0%, 0.341);
+}
+
+.profile-create:hover{
+  opacity:0.85;
+}
+
+.profile-create:active{
+  opacity:0.6;
+}
+
+.profile-box {
+  background-color: white;
+  cursor:pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.profile-box:hover {
+  transform: scale(1.05);
+}
+
+
+.fform-container {
+  background-color: white;
+  border: solid 1px rgb(185, 176, 176);
+  border-radius : 10px;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column; /* For vertical form layout */
+  justify-content: center;
+  align-items: center;
+  
+  /* Centering the form absolutely */
+  position: fixed; /* Positions relative to the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Offsets the form to perfectly center it */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for visual effect */
+}
+
+/* .main-form-container{
+  position:relative;
+} */
+
+.fform-container label,
+.fform-container input{
+  display: block;
+}
+
+.fform-container input{
+  width:400px;
+  border: solid 1px rgba(134, 132, 132, 0.764);
+  border-radius: 3px;
+  height:40px;
+  margin-top:15px;
+  margin-bottom: 20px;
+}
+
+.fform-container button{
+  width:406px;
+  border: solid 1px rgba(134, 132, 132, 0.764);
+  border-radius: 3px;
+  height:40px;
+  margin-top:15px;
+  margin-bottom: 20px;
+}
+
+.close-form{
+  color: black;
+  position:absolute;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor:pointer;
+}
+
+.close-form:hover {
+  opacity:0.7;
+}
+
+.close-form:active{
+  opacity:0.6;
+}
+
+.profile-image-container {
+  width: 64px;
+  height: 64px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.profile-image {
+  color: #666;
+}
+
+.profile-name {
+  flex-grow: 1;
+}
+
+.profile-name h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
